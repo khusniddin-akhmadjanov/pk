@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KP Financial Lab</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./image/LG-kps-logo.png" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="main__top top">
+          <h1 class="top__title"></h1>
+          <h3 class="top__title-number"></h3>
+          <hr class="line" />
+        </div>
+        <div class="main__info info">
+          <div class="info__top">
+            <h2 class="info__title">
+              UTILEZZO DEGLI AIUTI DEMINIMIS NEGLI UL TIMI 3 ANNI
+            </h2>
+          </div>
+          <div class="info__diagrams">
+            <div class="diag-left">
+              <canvas id="circleChart"> </canvas>
+              <h1 class="circlePersentage"></h1>
+            </div>
+            <div class="diag-right">
+              <div class="diag-rigt-top">
+                <div class="diag-right-utiliz">
+                  <h2 class="diag-right-title">DE MINIMIS UTILIZATTO</h2>
+                  <div class="result-box">
+                    <div class="result-box-color-utiliz"></div>
+                    <h2 class="result-box-price-utiliz"></h2>
+                  </div>
+                </div>
+                <div class="diag-right-resudio">
+                  <h2 class="diag-right-title">DE MINIMIS RESIDUO</h2>
+                  <div class="result-box">
+                    <div class="result-box-color-resudio"></div>
+                    <h2 class="result-box-price-resudio"></h2>
+                  </div>
+                </div>
+              </div>
+              <div class="diag__right-bottom">
+                <canvas id="myChart"></canvas>
+                <table>
+                  <tbody class="DeminimisValue"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__table table">
+          <h2 class="table__title">DETAGLIO DEGLI AUTI RICEVUTI</h2>
+          <table>
+            <thead>
+              <tr class="thTr"></tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+          </table>
+        </div>
+        <hr class="line" />
+        <div class="footer">
+          <div>
+            <a href="#">
+              <img
+                src="./image/LG-kps-logo.png"
+                alt="KPS Financial Lab logo"
+                width="150"
+              />
+            </a>
+          </div>
+          <div class="footer__links">
+            <div>
+              <a href="#">w. kpsfinanciallab.it</a>
+            </div>
+            <div><a href="#">e. finage@kpsfinanciallab.it</a></div>
+          </div>
+          <div class="footer__info">
+            <h3 class="footer__title">Sede</h3>
+            <p class="footer__date">Piazza IV Novembere, 4</p>
+            <p class="footer__place">20124 - Milano (MI)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/chartSecond.js"></script>
+    <script type="module" src="./js/chartThree.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/circle.js"></script>
+  </body>
+</html>
